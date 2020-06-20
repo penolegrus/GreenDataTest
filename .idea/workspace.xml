@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aff2c621-605a-4ed9-99ee-9acbd1153075" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Tag Library Descriptor" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dUA4SYXnmrenURX73HhOK25GnT" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/reportng-1.1.4.jar!/" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.FristClass">
+    <configuration name="FristClass" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GreenTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GreenTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="GreenTest" />
+      <option name="MAIN_CLASS_NAME" value="GreenTest.FristClass" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.uncommons.reportng.HTMLReporter" />
+        <listener class="org.uncommons.reportng.JUnitXMLReporter" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FristClass.InCorrectCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GreenTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GreenTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GreenTest" />
+      <option name="MAIN_CLASS_NAME" value="GreenTest.FristClass" />
+      <option name="METHOD_NAME" value="InCorrectCredentials" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FristClass.Title" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GreenTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GreenTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GreenTest" />
+      <option name="MAIN_CLASS_NAME" value="GreenTest.FristClass" />
+      <option name="METHOD_NAME" value="Title" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FristClass.keks" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GreenTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GreenTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GreenTest" />
+      <option name="MAIN_CLASS_NAME" value="GreenTest.FristClass" />
+      <option name="METHOD_NAME" value="keks" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FristClass.lol" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GreenTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GreenTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GreenTest" />
+      <option name="MAIN_CLASS_NAME" value="GreenTest.FristClass" />
+      <option name="METHOD_NAME" value="lol" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="SUITE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.FristClass" />
+      <item itemvalue="TestNG.FristClass.InCorrectCredentials" />
+      <item itemvalue="TestNG.FristClass.keks" />
+      <item itemvalue="TestNG.FristClass.lol" />
+      <item itemvalue="TestNG.FristClass.Title" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.FristClass" />
+        <item itemvalue="TestNG.FristClass.InCorrectCredentials" />
+        <item itemvalue="TestNG.FristClass.Title" />
+        <item itemvalue="TestNG.FristClass.keks" />
+        <item itemvalue="TestNG.FristClass.lol" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aff2c621-605a-4ed9-99ee-9acbd1153075" name="Default Changelist" comment="" />
+      <created>1592469106998</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592469106998</updated>
+      <workItem from="1592469109230" duration="8190000" />
+      <workItem from="1592502614795" duration="7561000" />
+      <workItem from="1592548924120" duration="6696000" />
+      <workItem from="1592590153619" duration="3272000" />
+      <workItem from="1592631852582" duration="918000" />
+      <workItem from="1592632804036" duration="1754000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/GreenTest/FristClass.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
