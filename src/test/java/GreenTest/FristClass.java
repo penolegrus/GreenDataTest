@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class FristClass {
 
 
-
+    private String urlhome = "https://gdcloud.ru/release-17/auth/login";
     private ChromeDriver driver;
     private SignInPage page;
 
@@ -31,10 +31,11 @@ public class FristClass {
     @Test(priority = 1)
     void PageLoadWithoutCookies1()
     {
-        driver.get("https://gdcloud.ru/release-17/auth/login");
+        driver.get(urlhome);
         String title = driver.getTitle();
         Assert.assertTrue(title.equals("WorkFlow"));
-        Assert.assertTrue(driver.findElementByCssSelector("#username").getAttribute("value").equals(""));
+        page = new SignInPage(driver);
+        Assert.assertTrue(page.usvalue(page.username,"value").equals(""));
     }
 
     @Test (priority = 2)
@@ -42,7 +43,7 @@ public class FristClass {
     {
         page = new SignInPage(driver);
         page.clickButton1();
-        Assert.assertTrue(page.username.findElement(driver).getAttribute("required").contains("true"));
+        Assert.assertTrue(page.usvalue(page.username,"required").contains("true"));
     }
 
     @Test (priority = 3)
@@ -51,75 +52,67 @@ public class FristClass {
         page = new SignInPage(driver);
         page.typeUsername("tester");
         page.clickButton1();
-        Assert.assertTrue(page.password.findElement(driver).getAttribute("required").contains("true"));
+        Assert.assertTrue(page.usvalue(page.password,"required").contains("true"));
     }
 
     @Test (priority = 4)
     public void TypeOnlyPassword4()
     {
         page = new SignInPage(driver);
-        page.username.findElement(driver).clear();
+        page.Clear1Field(page.username);
         page.typePassword("tester");
         page.clickButton1();
-        Assert.assertTrue(page.username.findElement(driver).getAttribute("required").contains("true"));
+        Assert.assertTrue(page.usvalue(page.username,"required").contains("true"));
     }
 
     @Test (priority = 5)
     public void InCorrectCredentials5()
     {
         page = new SignInPage(driver);
-        page.typeUsername("tester");
-        page.typePassword("123");
-        page.clickButton1();
-        Assert.assertTrue(page.error.findElement(driver).isEnabled());
+        page.LoginAs("tester","123");
+        Assert.assertTrue(page.enable(page.error),"true");
     }
 
     @Test (priority = 6)
     public void CorrectCredentials6()
     {
         page = new SignInPage(driver);
-        page.username.findElement(driver).clear();
-        page.password.findElement(driver).clear();
-        page.typeUsername("tester");
-        page.typePassword("K35G3U");
-        driver.findElementByXPath("//*[@id=\"login_button\"]").click();
-        WebElement name = driver.findElement(By.cssSelector("#userName"));
-        Assert.assertTrue(name.getAttribute("textContent").contains("Catswill J. J. (Jinior QA. Dpt)"));
+        page.ClearFields();
+        page.LoginAs("tester","K35G3U");
+        Assert.assertTrue(page.usvalue(page.username2,"textContent").contains("Catswill J. J. (Jinior QA. Dpt)"));
     }
 
     @Test(priority = 7)
     void PageLoadWithCookies7()
     {
-        driver.get("https://gdcloud.ru/release-17/auth/login");
+        driver.get(urlhome);
         String title = driver.getTitle();
         Assert.assertTrue(title.equals("WorkFlow"));
-        Assert.assertTrue(driver.findElementByCssSelector("#username").getAttribute("value").equals(""));
+        Assert.assertTrue(page.usvalue(page.username,"value").equals(""));
     }
 
     @Test(priority = 8)
     void SignInCurrentButton8()
     {
-        driver.findElementByCssSelector("#login_button_current").click();
-       Assert.assertTrue(page.error.findElement(driver).isEnabled());
+        page.currentloginBtn();
+        Assert.assertTrue(page.enable(page.error),"true");
 
     }
     @Test(priority = 9)
     void SignInAnotherButton9()
     {
-        driver.findElementByCssSelector("#login_button_domain").click();
-        Assert.assertTrue(page.error.findElement(driver).isEnabled());
+        page.anotherloginBtn();
+        Assert.assertTrue(page.enable(page.error),"true");
     }
     @Test(priority = 10)
     void RememberButton10()
     {
         page = new SignInPage(driver);
-        page.typeUsername("tester");
-        page.typePassword("K35G3U");
         page.checkBtn();
-        page.clickButton1();
-        Assert.assertTrue(page.rememberbtn.findElement(driver).getAttribute("checked").contains("true"));
+        page.LoginAs("tester","K35G3U");
+        Assert.assertTrue(page.usvalue(page.rememberbtn,"checked").contains("true"));
         WebElement name = driver.findElement(By.cssSelector("#userName"));
-        Assert.assertTrue(name.getAttribute("textContent").contains("Catswill J. J. (Jinior QA. Dpt)"));
+        Assert.assertTrue(page.usvalue(page.username2,"textContent").contains("Catswill J. J. (Jinior QA. Dpt)"));
     }
     @Test(priority = 11)
     void FailTest()
