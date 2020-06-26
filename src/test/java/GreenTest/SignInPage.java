@@ -21,10 +21,7 @@ public class SignInPage {
         driver.findElement(username).sendKeys(user);
         return this;
     }
-    public SignInPage errorEnb(){
-        driver.findElement(error).isEnabled();
-        return this;
-    }
+
     public SignInPage checkBtn(){
         driver.findElement(rememberbtn).click();
         return this;

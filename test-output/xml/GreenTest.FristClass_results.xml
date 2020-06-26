@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="GreenTest"
-           tests="11"
+           tests="16"
            failures="1"
            errors="0"
            skipped="0"
-           time="16,612">
+           time="23,862">
   <properties />
             <testcase name="FailTest" time="0,004" classname="GreenTest.FristClass">
                 <failure type="java.lang.AssertionError"
@@ -15,7 +15,7 @@
   org.testng.Assert.failNotEquals(Assert.java:969)
   org.testng.Assert.assertTrue(Assert.java:43)
   org.testng.Assert.assertTrue(Assert.java:53)
-  GreenTest.FristClass.FailTest(FristClass.java:121)
+  GreenTest.FristClass.FailTest(FristClass.java:169)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,15 +49,20 @@
           </testcase>
   
   
-            <testcase name="InCorrectCredentials5" time="0,227" classname="GreenTest.FristClass" />
-                <testcase name="PageLoadWithoutCookies1" time="3,696" classname="GreenTest.FristClass" />
-                <testcase name="ClickButtonWithoudData2" time="0,131" classname="GreenTest.FristClass" />
+            <testcase name="InCorrectCredentials5" time="0,170" classname="GreenTest.FristClass" />
+                <testcase name="CorrectCredentials6" time="7,655" classname="GreenTest.FristClass" />
+                <testcase name="PageLoadWithCookies7" time="2,272" classname="GreenTest.FristClass" />
+                <testcase name="TypeOnlyPassword4" time="0,212" classname="GreenTest.FristClass" />
+                <testcase name="RememberButton10" time="2,129" classname="GreenTest.FristClass" />
                 <testcase name="SignInCurrentButton8" time="0,079" classname="GreenTest.FristClass" />
-                <testcase name="TypeOnlyLogin3" time="0,259" classname="GreenTest.FristClass" />
-                <testcase name="RememberButton10" time="2,209" classname="GreenTest.FristClass" />
-                <testcase name="PageLoadWithCookies7" time="2,126" classname="GreenTest.FristClass" />
-                <testcase name="SignInAnotherButton9" time="0,079" classname="GreenTest.FristClass" />
-                <testcase name="TypeOnlyPassword4" time="0,228" classname="GreenTest.FristClass" />
-                <testcase name="CorrectCredentials6" time="7,574" classname="GreenTest.FristClass" />
+                <testcase name="PageLoadWithoutCookies1" time="3,536" classname="GreenTest.FristClass" />
+                <testcase name="TypeOnlyLogin3" time="0,191" classname="GreenTest.FristClass" />
+                <testcase name="LoginSpace12" time="2,129" classname="GreenTest.FristClass" />
+                <testcase name="ClickButtonWithoudData2" time="0,247" classname="GreenTest.FristClass" />
+                <testcase name="InvisibleSpace" time="0,276" classname="GreenTest.FristClass" />
+                <testcase name="EmailTest13" time="2,338" classname="GreenTest.FristClass" />
+                <testcase name="TooManyChars" time="0,418" classname="GreenTest.FristClass" />
+                <testcase name="RussianLetters11" time="2,125" classname="GreenTest.FristClass" />
+                <testcase name="SignInAnotherButton9" time="0,081" classname="GreenTest.FristClass" />
       
 </testsuite>

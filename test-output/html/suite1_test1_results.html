@@ -12,7 +12,7 @@
 <body>
 <h1>GreenTest</h1>
 <p>
-  Test duration: 20,270s
+  Test duration: 27,407s
 </p>
 
 
@@ -25,7 +25,7 @@
             
 <tr>
   <td class="method">
-                  FailTest
+                  <span class="description" title="Проверка неудачного теста">FailTest</span>
       </td>
   <td class="duration">
     0,004s
@@ -41,7 +41,7 @@
               org.testng.Assert.failNotEquals(Assert.java:969)<br />
               org.testng.Assert.assertTrue(Assert.java:43)<br />
               org.testng.Assert.assertTrue(Assert.java:53)<br />
-              GreenTest.FristClass.FailTest(FristClass.java:121)<br />
+              GreenTest.FristClass.FailTest(FristClass.java:169)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -83,10 +83,10 @@
             
 <tr>
   <td class="method">
-                  ClickButtonWithoudData2
+                  <span class="description" title="Попытка входа без ввода логина и пароля">ClickButtonWithoudData2</span>
       </td>
   <td class="duration">
-    0,131s
+    0,247s
   </td>
   <td class="result">
         
@@ -97,10 +97,10 @@
 </tr>
 <tr>
   <td class="method">
-                  CorrectCredentials6
+                  <span class="description" title="Вход с использованием корректных данных">CorrectCredentials6</span>
       </td>
   <td class="duration">
-    7,574s
+    7,655s
   </td>
   <td class="result">
         
@@ -111,10 +111,10 @@
 </tr>
 <tr>
   <td class="method">
-                  InCorrectCredentials5
+                  <span class="description" title="Попытка ввести неполный адрес почты без .ru/.com">EmailTest13</span>
       </td>
   <td class="duration">
-    0,227s
+    2,338s
   </td>
   <td class="result">
         
@@ -125,10 +125,10 @@
 </tr>
 <tr>
   <td class="method">
-                  PageLoadWithCookies7
+                  <span class="description" title="Вход с использованием некорректных данных">InCorrectCredentials5</span>
       </td>
   <td class="duration">
-    2,126s
+    0,170s
   </td>
   <td class="result">
         
@@ -139,10 +139,10 @@
 </tr>
 <tr>
   <td class="method">
-                  PageLoadWithoutCookies1
+                  <span class="description" title="Поставить невидимый символ после логина (Alt+Num255)">InvisibleSpace</span>
       </td>
   <td class="duration">
-    3,696s
+    0,276s
   </td>
   <td class="result">
         
@@ -153,10 +153,10 @@
 </tr>
 <tr>
   <td class="method">
-                  RememberButton10
+                  <span class="description" title="Ввод пароля и логина с использованием пробелов">LoginSpace12</span>
       </td>
   <td class="duration">
-    2,209s
+    2,129s
   </td>
   <td class="result">
         
@@ -167,7 +167,77 @@
 </tr>
 <tr>
   <td class="method">
-                  SignInAnotherButton9
+                  <span class="description" title="Загрузка страницы с существующими куками">PageLoadWithCookies7</span>
+      </td>
+  <td class="duration">
+    2,272s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Загрузка страницы с чистыми куками">PageLoadWithoutCookies1</span>
+      </td>
+  <td class="duration">
+    3,536s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Вход с галочкой для запоминания логина и пароля">RememberButton10</span>
+      </td>
+  <td class="duration">
+    2,129s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Ввод логина и пароля на русском">RussianLetters11</span>
+      </td>
+  <td class="duration">
+    2,125s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Нажать кнопку Другая учетная запись">SignInAnotherButton9</span>
+      </td>
+  <td class="duration">
+    0,081s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Нажать кнопку Текущая учетная запись">SignInCurrentButton8</span>
       </td>
   <td class="duration">
     0,079s
@@ -181,10 +251,10 @@
 </tr>
 <tr>
   <td class="method">
-                  SignInCurrentButton8
+                  <span class="description" title="Ввести длинный логин">TooManyChars</span>
       </td>
   <td class="duration">
-    0,079s
+    0,418s
   </td>
   <td class="result">
         
@@ -195,10 +265,10 @@
 </tr>
 <tr>
   <td class="method">
-                  TypeOnlyLogin3
+                  <span class="description" title="Попытка войти, введя только логин">TypeOnlyLogin3</span>
       </td>
   <td class="duration">
-    0,259s
+    0,191s
   </td>
   <td class="result">
         
@@ -209,10 +279,10 @@
 </tr>
 <tr>
   <td class="method">
-                  TypeOnlyPassword4
+                  <span class="description" title="Попытка войти, введя только пароль">TypeOnlyPassword4</span>
       </td>
   <td class="duration">
-    0,228s
+    0,212s
   </td>
   <td class="result">
         
