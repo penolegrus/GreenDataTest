@@ -4,11 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
-
+import org.testng.annotations.*;
 
 
 import java.util.concurrent.TimeUnit;
@@ -38,7 +34,6 @@ public class FristClass {
         Assert.assertTrue(title.equals("WorkFlow"));
         page = new SignInPage(driver);
         Assert.assertTrue(page.usvalue(page.username,"value").equals(""));
-        System.out.println("Страница загружена, поле для ввода логина пустое");
     }
 
     @Test (priority = 2, description = "Попытка входа без ввода логина и пароля")
@@ -172,7 +167,11 @@ public class FristClass {
         Assert.assertTrue(title.contains("TestTitle"));
     }
 
+    @AfterSuite
+    public void cleanUp() {
 
+        System.out.println("Все тесты завершены");
+    }
     @AfterClass
     public void Quit()
     {
